@@ -14,6 +14,6 @@ agent = CuriousParticle(world, reward_engine, learner)
 
 for _ in range(100):
     agent.move()
-    world.display()
+    world.display(agent.x, agent.y)
     time.sleep(0.1)
     print("---")
